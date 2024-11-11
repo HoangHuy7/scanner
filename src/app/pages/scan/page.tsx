@@ -3,6 +3,7 @@
 import React, { useState} from 'react';
 import BarcodeGenerator from "@/components/BarcodeGenerator";
 import BarcodeScanner from '@/components/BarcodeScanner';
+import BarcodeScanner2 from "@/components/BarcodeScanner2";
 // import BarcodeScanner2 from "@/components/BarcodeScanner2";
 
 const PageScan: React.FC = () => {
@@ -20,10 +21,9 @@ const PageScan: React.FC = () => {
             />
 
             <h1>Quét mã Barcode</h1>
-            <BarcodeScanner onScanSuccess={(result) => setScannedResult(result)}/>
+            {/*<BarcodeScanner onScanSuccess={(result) => setScannedResult(result)}/>*/}
+            <BarcodeScanner2 />
             {/*<BarcodeScanner2 onScanSuccess={(result) => setScannedResult(result)}/>*/}
-            <br/>
-            <p>Kết quả quét:</p><h1 style={{color: 'red'}}> {scannedResult || ""}</h1>
         </div>
     );
 };
