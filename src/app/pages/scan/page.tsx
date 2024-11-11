@@ -2,13 +2,11 @@
 
 import React, { useState} from 'react';
 import BarcodeGenerator from "@/components/BarcodeGenerator";
-import BarcodeScanner from '@/components/BarcodeScanner';
 import BarcodeScanner2 from "@/components/BarcodeScanner2";
 // import BarcodeScanner2 from "@/components/BarcodeScanner2";
 
 const PageScan: React.FC = () => {
     const [barcodeValue, setBarcodeValue] = useState('123456789');
-    const [scannedResult, setScannedResult] = useState('');
     return (
         <div>
             <h1>Tạo mã Barcode</h1>

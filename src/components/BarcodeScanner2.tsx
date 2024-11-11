@@ -10,13 +10,11 @@ const BarcodeScannerComponent: React.FC = () => {
             inputStream: {
                 type: 'LiveStream',
                 constraints: {
-                    peerIdentity: ""
-
                 },
                 target: videoRef.current,
             },
             decoder: {
-                readers: ['code_128_reader'] // Chỉ quét mã vạch Code 128
+                readers: ['code_128_reader']
             }
         }, (err) => {
             if (err) {
